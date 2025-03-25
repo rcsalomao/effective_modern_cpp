@@ -28,10 +28,10 @@ uptr<T> mu(Args&&... args) {
     return std::make_unique<T>(std::forward<Args>(args)...);
 };
 
+using std::to_string;
+
 template <std::ranges::forward_range Rng>
 auto stringify(Rng&& seq) {
-    using std::to_string;
-
     auto b = seq | vw::transform([](const auto& a) { return to_string(a); }) |
              vw::join_with(',') | vw::common;
     return "{" + std::string(std::begin(b), std::end(b)) + "}";
