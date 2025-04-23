@@ -73,7 +73,7 @@ void main() {
     // disponibilidade de funções 'noexcept', são capazes de realizar operações
     // alternativas mais eficientes, tal como 'std::vector<T>::push_back()'. O
     // método 'push_back()' verifica inicialmente se para o tipo da variável que
-    // ele possui há a definição de operação de 'move noexpect'. Caso positivo,
+    // ele possui há a definição de operação de 'move noexcept'. Caso positivo,
     // então o método realiza a operação de movimentação, ao invés da operação
     // convencional de cópia. Caso contrário, então 'push_back' realiza a cópia
     // do elemento para dentro do container. Outras funções operam de forma

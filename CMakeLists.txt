@@ -29,6 +29,31 @@ add_executable(
     src/item_16.cpp
     src/item_17.cpp
     src/item_18.cpp
+    src/item_19.cpp
+    src/item_20.cpp
+    src/item_21.cpp
+    src/item_22.cpp
+    src/item_22_Widget.cpp
+    src/item_23.cpp
+    src/item_24.cpp
+    src/item_25.cpp
+    src/item_26.cpp
+    src/item_27.cpp
+    src/item_28.cpp
+    src/item_29.cpp
+    src/item_30.cpp
+    src/item_31.cpp
+    src/item_32.cpp
+    src/item_33.cpp
+    src/item_34.cpp
+    src/item_35.cpp
+    src/item_36.cpp
+    src/item_37.cpp
+    src/item_38.cpp
+    src/item_39.cpp
+    src/item_40.cpp
+    src/item_41.cpp
+    src/item_42.cpp
 )
 
 target_include_directories(

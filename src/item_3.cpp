@@ -29,13 +29,16 @@ class my_vector {
 
 void authenticate_user();
 template <typename Container, typename Index>
+//
 // auto auth_and_access(Container& c, Index i)
 //     -> decltype(c[i]) {  // forma alternativa de definição (trailing return)
+//
 // auto auth_and_access(
 //     Container& c,
 //     Index i) {  // esta forma não está correta, pois o mecanismo 'auto'
 //                 // (similar ao caso de expressões 'template') poderá remover
 //                 // as qualidades do tipo, como a referência por exemplo.
+//
 decltype(auto) auth_and_access(Container& c, Index i) {
     authenticate_user();
     return c[i];  // 'decltype(auto) faz com que a dedução de tipo de
@@ -78,7 +81,7 @@ void main() {
     std::println("decltype(v[0]): {}",
                  type_id_with_cvr<decltype(v[0])>().pretty_name());
 
-    // um dos principais usos de 'decltype' é a especificação de tipos de
+    // Um dos principais usos de 'decltype' é a especificação de tipos de
     // variáveis que dependem dos tipos de outros parâmetros, como no caso
     // de expressões 'template'. Ver as funções template 'auth_and_access'.
     //
