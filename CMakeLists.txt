@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11...3.31)
+cmake_minimum_required(VERSION 4.0.0)
 
 project(
     effective_modern_cpp
@@ -7,6 +7,7 @@ project(
 )
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 23)
 
 add_executable(
     effective_modern_cpp
@@ -68,7 +69,6 @@ target_compile_options(
     -fdiagnostics-color=always
     -Wall
     -Wextra
-    -std=c++23
     -Og
     -march=native
 )
